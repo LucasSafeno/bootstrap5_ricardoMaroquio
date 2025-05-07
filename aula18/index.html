@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.js"
+      integrity="sha512-sSOeacod972lTNk0ePyxrSSI6yoqvGRm7bbqtwqsY1r7TcdYiQn/a+KvaYQ0iacHBYE/MSEVjTNa2dglSz74vA=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="container p-5">
+      <form action="">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control form-control-plaintext"
+            placeholder="Digite seu email"
+          />
+          <div class="form-text">
+            Nunca compartilharemos seu email com terceiros
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" id="senha" class="form-control" />
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" id="lembrar" class="form-check-input" />
+          <label for="lembrar" class="form-check-label">Lembrar</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+
+      <hr />
+
+      <input type="file" name="arquivo" id="arquivo" class="from-control" />
+      <input type="color" name="cor" id="cor" class="form-control" />
+
+      <hr />
+
+      <div class="mb-3">
+        <label for="cidade" class="form-label">Cidade</label>
+        <input
+          type="text"
+          list="cidades"
+          class="form-control"
+          placeholder="Digite uma cidade"
+        />
+        <datalist id="cidades">
+          <option value="Cidade 1">Cidade 1</option>
+          <option value="Cidade 2">Cidade 2</option>
+          <option value="Cidade 3">Cidade 3</option>
+          <option value="Cidade 4">Cidade 4</option>
+        </datalist>
+      </div>
+    </div>
+  </body>
+</html>
